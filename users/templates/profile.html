@@ -1,0 +1,69 @@
+{% extends 'front/base.html' %}
+{% block mainpage %}
+<!-- Testing purpose can delete later -->
+<div class="container">
+    <!-- Navbar -->
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-secondary" role="alert">
+                Navbar
+            </div>
+        </div>
+    </div>
+    <!-- no-gutters will get rid of the padding from 
+        I can test these later for if this is useful
+        class="row no-gutters" 
+        class="col-2 mr-auto"
+        class="col-2 ml-auto"
+    -->
+    <!-- Search bar -->
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 ml-auto">
+            <div class="alert alert-secondary" role="alert">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </div>
+    </div>
+
+    <!-- Testing left bar mid bar and right bar -->
+    <div class="row">
+        <div class="col-12 ml-auto mr-auto col-lg-2 order-12">
+            <div class="alert alert-primary" role="alert" style="min-height:300px;">
+                This is left side bar
+            </div>
+        </div>  
+
+        <div class="col-12 col-lg-8 ml-auto mr-auto order-6">
+            <div class="alert alert-primary" role="alert" style="min-height:300px;">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="alert alert-primary" role="alert">
+                            left side Content inside the mid bar
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="alert alert-primary" role="alert">
+                            Right side Content inside the mid bar
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-lg-2 order-1">
+            <div class="alert alert-primary" role="alert" style="min-height:300px;">
+                This is right side bar
+            </div>
+        </div>     
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-primary" role="alert">
+                This is a Footer
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock mainpage %}
